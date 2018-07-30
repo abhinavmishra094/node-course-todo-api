@@ -8,6 +8,7 @@ var {User } = require('./models/user');
 
 var app = express();
 const port = process.env.Port || 3000;
+console.log(`port: ${port}`);
 app.use(bodyParser.json());
 app.post('/todos',(req,res)=>{
   var todo = new Todo({
